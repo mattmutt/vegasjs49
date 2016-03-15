@@ -1,0 +1,12 @@
+{
+  "ambientDependencies": {
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#fab0b336b0414fac23963bde83f7d7077f6cf14c",
+    "three": "github:DefinitelyTyped/DefinitelyTyped/threejs/three.d.ts#c6c3d3e65dd2d7035428f9c7b371ec911ff28542",
+    "three-projector": "github:DefinitelyTyped/DefinitelyTyped/threejs/three-projector.d.ts#48f20e97bfaf70fc1a9537b38aed98e9749be0ae",
+    "three-detector": "github:DefinitelyTyped/DefinitelyTyped/threejs/three-effectcomposer.d.ts#48f20e97bfaf70fc1a9537b38aed98e9749be0ae",
+    "three-effectscomposer": "github:DefinitelyTyped/DefinitelyTyped/threejs/detector.d.ts#48f20e97bfaf70fc1a9537b38aed98e9749be0ae",
+    "three-shaderpass": "github:DefinitelyTyped/DefinitelyTyped/threejs/three-shaderpass.d.ts#ee05b1163d8da7f16719f08d52f70ab524f1003a",
+    "three-renderpass": "github:DefinitelyTyped/DefinitelyTyped/threejs/three-renderpass.d.ts#ee05b1163d8da7f16719f08d52f70ab524f1003a"
+  }
+}
+

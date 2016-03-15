@@ -1,0 +1,8 @@
+BODY {
+  margin: 0;
+  padding: 0;
+  background-color: #123;
+  overflow: hidden; }
+
+#container {
+  filter: blur(1); }
