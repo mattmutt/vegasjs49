@@ -1,0 +1,93 @@
+BODY {
+  margin: 0;
+  padding: 0;
+  background-color: #123;
+  overflow: hidden; }
+
+.component-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem; }
+
+.component {
+  border: 1px #aaaaaa solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: inherit;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+.component .userInput {
+  flex-grow: 0;
+  text-align: center; }
+
+.component .userInput INPUT.input {
+  color: #ffeeaa;
+  font-size: 2rem;
+  background-color: rgba(1, 2, 3, 0.4);
+  border: 0; }
+
+.component .userInput INPUT.input::input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+.component .userInput INPUT.input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+.component .userInput INPUT.input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+.component .userInput BUTTON.action {
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 0.2rem #333 solid;
+  padding: 0.4rem; }
+
+.component .output {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  flex-basis: 100vw;
+  color: #ccc; }
+
+.component .output:not(.active) {
+  border: 2px rgba(1, 1, 1, 0.5) solid;
+  background: rgba(128, 128, 128, 0.5); }
+
+.component .output.active {
+  border: 2px #00ffff solid; }
+
+.component .output .item {
+  padding: 1rem;
+  width: 200px; }
+
+.component .output .item .photo IMG {
+  width: 100%;
+  border: 0.2rem rgba(0, 0, 0, 0.5) solid;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out; }
+
+.component .output .item .photo:hover IMG {
+  transform: rotate(5deg);
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out; }
+
+.component .output .item .title SPAN {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.component .output .introduction {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  justify-content: center; }

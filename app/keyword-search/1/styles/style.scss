@@ -1,0 +1,71 @@
+
+BODY {
+
+  margin: 0;
+  padding: 0;
+  background-color: #123;
+  overflow: hidden;
+
+}
+
+#component {
+  padding: 1rem;
+  border: 1px #aaaaaa solid;
+  background-color: rgba(255, 255, 255, .3);
+
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .userInput {
+    flex-grow: 0;
+    text-align: center;
+
+    INPUT.input {
+
+      color: #ffeeaa;
+      font-size: 2rem;
+      background-color: rgba(1, 2, 3, .4);
+      border: 0;
+
+      // should use a mixin..
+      &::input-placeholder {
+        color: rgba(255, 255, 255, .2);
+      }
+      &::-moz-input-placeholder {
+        color: rgba(255, 255, 255, .2);
+      }
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .2);
+      }
+    }
+
+    BUTTON.action {
+
+      font-size: 2rem;
+      border-radius: 1rem;
+      border: 0.2rem #333 solid;
+      padding: 0.4rem;
+    }
+
+  }
+
+  .output {
+    flex-grow: 1;
+    color: #ccc;
+
+    // ------- states of the output box -------------
+    &.active {
+      border: 2px #ffaa00 solid;
+    }
+
+    &.empty {
+      display: none;
+      border: 1px #ff0000 solid;
+    }
+
+  }
+
+}
+

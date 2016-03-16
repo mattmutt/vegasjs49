@@ -1,0 +1,50 @@
+BODY {
+  margin: 0;
+  padding: 0;
+  background-color: #123;
+  overflow: hidden; }
+
+#component {
+  padding: 1rem;
+  border: 1px #aaaaaa solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+#component .userInput {
+  flex-grow: 0;
+  text-align: center; }
+
+#component .userInput INPUT.input {
+  color: #ffeeaa;
+  font-size: 2rem;
+  background-color: rgba(1, 2, 3, 0.4);
+  border: 0; }
+
+#component .userInput INPUT.input::input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+#component .userInput INPUT.input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+#component .userInput INPUT.input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+#component .userInput BUTTON.action {
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 0.2rem #333 solid;
+  padding: 0.4rem; }
+
+#component .output {
+  flex-grow: 1;
+  color: #ccc; }
+
+#component .output.active {
+  border: 2px #ffaa00 solid; }
+
+#component .output.empty {
+  display: none;
+  border: 1px #ff0000 solid; }
